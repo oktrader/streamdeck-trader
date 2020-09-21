@@ -1,0 +1,35 @@
+{
+    "Actions": [{
+        "Icon": "images/actionIcon",
+        "Name": "Crypto trader",
+        "States": [{
+            "Image": "images/actionDefaultImage",
+            "TitleAlignment": "middle",
+            "FontSize": "12"
+        }],
+        "SupportedInMultiActions": false,
+        "Tooltip": "Trade brypto",
+        "UUID": "com.oktrader.bryptotrader"
+    }],
+    "SDKVersion": 2,
+    "Author": "O.K.",
+    "CodePath": "index.html",
+    "PropertyInspectorPath": "index_pi.html",
+    "Name": "Brypto trader",
+    "Description": "Trade bryptocurrencies",
+    "Icon": "images/pluginIcon",
+    "URL": "https://github.com/oktrader/streamdeck-crypto",
+    "Version": "1.1.0",
+    "OS": [{
+            "Platform": "mac",
+            "MinimumVersion": "10.12"
+        },
+        {
+            "Platform": "windows",
+            "MinimumVersion": "10"
+        }
+    ],
+    "Software": {
+        "MinimumVersion": "4.1"
+    }
+}

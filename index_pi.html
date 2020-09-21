@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport
+        content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>com.ns.cryptotrader.property_inspector</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/ccxt.browser.1.34.39.js"></script>
+</head>
+
+<body>
+    <div class="sdpi-wrapper">
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Exchange</div>
+            <select class="sdpi-item-value select setvalueSelect sdList sdProperty"
+            sdValueField="exchange"
+            sdListTextProperty="name"
+            sdListValueProperty="id"
+            oninput="setSettings()"
+            id="exchanges"></select>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Trading pair</div>
+            <select class="sdpi-item-value select setvalueSelect sdList sdProperty"
+            sdValueField="pair"
+            oninput="setSettings()"
+            id="trading-pairs" name="trading-pairs"></select>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Direction</div>
+            <select class="sdpi-item-value select setvalueSelect sdProperty" id="order-direction" oninput="setSettings()">
+                <option value="bid" selected>Bid</option>
+                <option value="ask">Ask</option>
+            </select>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Order type</div>
+            <select class="sdpi-item-value select setvalueSelect sdProperty" id="ordertype" oninput="setSettings()">
+                <option value="market" selected>Market</option>
+                <option value="limit">Limit</option>
+            </select>
+        </div>
+
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Size</div>
+            <input type="number" inputmode="numeric" class="sdpi-item-value sdProperty" id="size" name="size" value="1" pattern="[0-9]*"
+            oninput="setSettings()"/>
+        </div>
+        <script src="js/pi.js"></script>
+</body>
+</html>
